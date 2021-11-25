@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Crear Cuenta</title> 
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<link rel="stylesheet" href="estilos.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/js/registro.js"></script>
+	
+</head>  
+<body>
+
+    <h1>Ocho Bits Ltda</h1>
+ <form class="formulario">
+    
+    <h4>Crear Cuenta</h4>
+     <div class="contenedor">
+         
+        <div class="input-contenedor">
+            <i class="fas fa-user icon"></i>
+            <input type="username" name="username" id="username" placeholder="Nombre Completo" required>        
+        </div>
+
+        <div class="input-contenedor">
+            <i class="fas fa-envelope icon"></i>
+            <input type="email" name="useremail" id="useremail" placeholder="Correo Electronico" required>        
+        </div>
+         
+        <div class="input-contenedor">
+            <i class="fas fa-key icon"></i>
+            <input type="password" name="password" id="password" placeholder="Contraseña" required>   
+        </div>
+
+        <p>La contraseña debe tener minimo 6 caracteres</p>
+
+        <div class="input-contenedor">
+            <i class="fas fa-key icon"></i>
+            <input type="password" name="passwordrepeat" id="passwordrepeat" placeholder="Repita Contraseña" required>   
+        </div>
+
+         <input type="submit" value="Crear" class="button" onclick="registrar()">
+         
+         <p>¿Ya tienes una cuenta?<a class="link" href="index.html"> Iniciar Sesión aquí</a></p>
+     </div>
+    </form>
+</body>
+</html>
